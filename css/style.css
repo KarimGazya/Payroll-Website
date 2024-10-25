@@ -1,0 +1,69 @@
+body {
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
+  min-width: 30px;
+}
+input {
+  border-radius: 0;
+}
+
+.submit {
+  font-size: 25px;
+}
+
+.anchor {
+  margin-top: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.main {
+  margin-top: 20px;
+  border-radius: 25px;
+  justify-content: flex-end;
+  width: 30%;
+}
+
+.search {
+  margin-top: 20px;
+  border-radius: 25px;
+  justify-content: flex-end;
+  width: 70%;
+}
+.k {
+  margin: 0 0px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.dropdown-content {
+  padding: 10px;
+  text-align: left;
+  background-color: #f8f0e3;
+}
+.dropdown-content:hover + .dropdown-content {
+  display: block;
+}
+
+.alert {
+  font-size: 20px;
+  height: 30px;
+  padding: 0;
+  opacity: 0.7;
+  padding-left: 15px;
+}
+
+.choose {
+  width: 100%;
+}
+
+.icon {
+  margin: 70px;
+}
+
+.table {
+  width: 100%;
+  margin-right: 30px;
+}

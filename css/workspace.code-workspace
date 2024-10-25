@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "c:\\Users\\Lenovo\\my-app"
+	},
+	{
+		"path": "..\\..\\.."
+	},
+	{
+		"path": "..\\..\\..\\..\\Game\\src\\views"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Portfolio"
+  }
+}

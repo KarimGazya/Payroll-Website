@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/solar/bootstrap.css"
+    />
+    <link rel="stylesheet" href="css\style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="payroll.ejs" method="post">
+      <div class="card main container text-center bg-dark text-light p-4">
+        <div class="card-body">
+          <div class="row alert">
+            <%=message%>
+          </div>
+          <div class="row">
+            <h1 class="text-left mb-4">Add Payroll</h1>
+          </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="input-group mb-3">
+            <label class="m-2" for="Eid">Employee :</label>
+              <select name="Eid" class="bg-dark text-light">
+                <%EmployeesList.forEach(function(emp){%>
+                  <option value=<%=emp._id%>><%=emp.name%></option>
+                <%}) %>
+                
+              </select>
+              
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <input
+              class="password-field bg-dark form-control text-light"
+              type="number"
+              placeholder="Salary"
+              autocomplete="off"
+              name="Salary"
+              required 
+            />
+          </div>
+        </div>
+        <div class="row k mt-1">
+          <input
+            class="bg-dark form-control text-light"
+            type="date"
+            placeholder="Date"
+            min=<%=date%>
+            name="Date"
+            required 
+            autocomplete="off"
+          />
+        </div>
+
+        
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <a class="btn btn-success mt-5 btn-block font-weight-bold" href="/">Return back</a>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <button class="btn btn-success mt-5 btn-block font-weight-bold">
+              ADD
+             </button>
+          </div>
+        </div>
+      </div>
+    </form>
+        </div>
+        
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
